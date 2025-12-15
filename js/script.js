@@ -1,6 +1,11 @@
+document.addEventListener('DOMContentLoaded', () => {
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('navMenu');
 
-const ham=document.getElementById("hamburger");
-const nav=document.getElementById("navMenu");
-if(ham){
-  ham.onclick=()=>nav.classList.toggle("open");
-}
+    if(hamburger){
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        });
+    }
+});

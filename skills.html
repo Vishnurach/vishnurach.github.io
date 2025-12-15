@@ -1,28 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><title>Skills</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
+<head>
+    <title>Skills | Vishnu Rach K R</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <header class="header">
-  <div class="brand-name">Vishnu Rach K R</div>
-
-  <nav class="nav" id="navMenu">
-    <a href="index.html">Home</a>
-    <a href="skills.html">Skills</a>
-    <a href="experience.html">Experience</a>
-    <a href="projects.html">Projects</a>
-    <a href="training.html">Training</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-
-  <div class="hamburger" id="hamburger">
-    <span></span><span></span><span></span>
-  </div>
+    <div class="brand-name">Vishnu Rach K R</div>
+    <nav class="nav" id="navMenu">
+        <a href="index.html">Home</a>
+        <a href="skills.html" class="active">Skills</a>
+        <a href="experience.html">Experience</a>
+        <a href="projects.html">Projects</a>
+        <a href="training.html">Training</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+    </div>
 </header>
 
-<section class="page-section"><h2>Skills</h2></section>
-<script src="js/script.js"></script></body></html>
+<section class="page-section">
+    <div class="container">
+        <h2 class="section-title">Technical Toolbox</h2>
+        
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3>🖥️ Firmware & Languages</h3>
+                <ul>
+                    <li>C / C++ / Embedded C</li>
+                    <li>Python (Scripting/Automation)</li>
+                    <li>RTOS Fundamentals</li>
+                    <li><strong>IDEs:</strong> PSoC Creator, STM32CubeIDE, Keil μVision, MPLAB X</li>
+                </ul>
+            </div>
+
+            <div class="skill-card">
+                <h3>💾 Microcontrollers & Protocols</h3>
+                <ul>
+                    <li><strong>MCUs:</strong> PSoC (Cypress), ARM Cortex, PIC, AVR, ESP8266</li>
+                    <li><strong>Interfaces:</strong> I2C, SPI, UART, RS485, GPIO, ADC, PWM</li>
+                    <li>Timer/Counter Operations</li>
+                </ul>
+            </div>
+
+            <div class="skill-card">
+                <h3>⚡ Hardware & EDA</h3>
+                <ul>
+                    <li>Schematic & PCB Design</li>
+                    <li><strong>Tools:</strong> Altium Designer, KiCad, Proteus</li>
+                    <li>Circuit Simulation (LTSpice)</li>
+                    <li>Component Selection & BOM Management</li>
+                </ul>
+            </div>
+
+            <div class="skill-card">
+                <h3>📊 Test & Automation</h3>
+                <ul>
+                    <li><strong>DAQ:</strong> NI DAQ, MonoDAQ, LabVIEW</li>
+                    <li><strong>Instruments:</strong> Oscilloscopes, Logic Analyzers, LCR Meters</li>
+                    <li>Automated Battery Testing (Charge/Discharge)</li>
+                    <li>Reliability & Environmental Testing</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="js/script.js"></script>
+</body>
+</html>

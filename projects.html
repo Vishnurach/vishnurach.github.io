@@ -1,28 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><title>Projects</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
+<head>
+    <title>Projects | Vishnu Rach K R</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <header class="header">
-  <div class="brand-name">Vishnu Rach K R</div>
-
-  <nav class="nav" id="navMenu">
-    <a href="index.html">Home</a>
-    <a href="skills.html">Skills</a>
-    <a href="experience.html">Experience</a>
-    <a href="projects.html">Projects</a>
-    <a href="training.html">Training</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-
-  <div class="hamburger" id="hamburger">
-    <span></span><span></span><span></span>
-  </div>
+    <div class="brand-name">Vishnu Rach K R</div>
+    <nav class="nav" id="navMenu">
+        <a href="index.html">Home</a>
+        <a href="skills.html">Skills</a>
+        <a href="experience.html">Experience</a>
+        <a href="projects.html" class="active">Projects</a>
+        <a href="training.html">Training</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+    </div>
 </header>
 
-<section class="page-section"><h2>Projects</h2></section>
-<script src="js/script.js"></script></body></html>
+<section class="page-section">
+    <div class="container">
+        <h2 class="section-title">Featured Projects</h2>
+        
+        <div class="projects-grid">
+            <article class="project-card">
+                <div class="project-header">
+                    <h3>Infusion Pump (Class II Medical Device)</h3>
+                    <div class="tags">
+                        <span>PSoC</span><span>Altium</span><span>IEC 60601</span>
+                    </div>
+                </div>
+                <div class="project-body">
+                    <p><strong>Role:</strong> Firmware & Hardware Validation</p>
+                    <p>Developed firmware in PSoC Creator to validate daughter board integration. Designed a BMS and power architecture in Altium, validating circuits in LTSpice to ensure patient safety standards.</p>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <div class="project-header">
+                    <h3>Holter ECG Machine</h3>
+                    <div class="tags">
+                        <span>Automation</span><span>Li-ion</span><span>Testing</span>
+                    </div>
+                </div>
+                <div class="project-body">
+                    <p><strong>Role:</strong> Reliability Engineer</p>
+                    <p>Developed an automated test system for battery connection reliability, eliminating 90% of manual testing labor. Verified charger IC and pack protection behavior under environmental stress.</p>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <div class="project-header">
+                    <h3>Invasive Cardiology Board</h3>
+                    <div class="tags">
+                        <span>ARM</span><span>Ethernet</span><span>Hardware Design</span>
+                    </div>
+                </div>
+                <div class="project-body">
+                    <p><strong>Role:</strong> Hardware Designer</p>
+                    <p>Designed schematics for a carrier board featuring power supplies, an ARM microcontroller, and communication peripherals (LVDS, Ethernet, SPI, RS485). Executed hardware evaluation plans.</p>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <div class="project-header">
+                    <h3>AAC Device (Award Winner)</h3>
+                    <div class="tags">
+                        <span>Product Design</span><span>System Architecture</span>
+                    </div>
+                </div>
+                <div class="project-body">
+                    <p><strong>Role:</strong> System Architect</p>
+                    <p>Designed the complete system for an Augmentative and Alternative Communication device for NISH. Won First Place in a State-Wide Competition (July 2022).</p>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<script src="js/script.js"></script>
+</body>
+</html>
