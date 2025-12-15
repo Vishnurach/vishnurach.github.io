@@ -9,53 +9,266 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
 <header class="header">
     <div class="brand-name">
         <i class="fa-solid fa-microchip"></i> Vishnu Rach K R
     </div>
     <nav class="nav" id="navMenu">
-        <a href="index.html" class="active"><i class="fa-solid fa-house"></i> Home</a>
-<a href="skills.html" ><i class="fa-solid fa-tools"></i> Skills</a>
-<a href="experience.html" ><i class="fa-solid fa-briefcase"></i> Experience</a>
-<a href="projects.html" ><i class="fa-solid fa-project-diagram"></i> Projects</a>
-<a href="training.html" ><i class="fa-solid fa-chalkboard-user"></i> Training</a>
-<a href="contact.html" ><i class="fa-solid fa-envelope"></i> Contact</a>
-
+        <a href="#home" class="nav-link active"><i class="fa-solid fa-house"></i> Home</a>
+        <a href="#skills" class="nav-link"><i class="fa-solid fa-tools"></i> Skills</a>
+        <a href="#experience" class="nav-link"><i class="fa-solid fa-briefcase"></i> Experience</a>
+        <a href="#projects" class="nav-link"><i class="fa-solid fa-project-diagram"></i> Projects</a>
+        <a href="#training" class="nav-link"><i class="fa-solid fa-chalkboard-user"></i> Training</a>
+        <a href="#contact" class="nav-link"><i class="fa-solid fa-envelope"></i> Contact</a>
     </nav>
     <div class="hamburger" id="hamburger">
         <span></span><span></span><span></span>
     </div>
 </header>
 
-<main class="hero">
-    <div class="hero-container">
-        <div class="hero-text">
-            <h1>Embedded Systems <br> Engineer</h1>
-            <p class="hero-subtitle">
-                <i class="fa-solid fa-code"></i> Firmware &nbsp;|&nbsp; 
-                <i class="fa-solid fa-microchip"></i> Hardware &nbsp;|&nbsp; 
-                <i class="fa-solid fa-check-double"></i> Validation
-            </p>
-            <p style="margin-bottom: 25px; color: #4a5568;">
-                Versatile engineer bridging the gap between hardware design and firmware integration. 
-                Specialized in Medical Devices, Test Automation, and Full-Cycle Product Development.
+<main>
+
+    <section id="home" class="section-home">
+        <div class="hero-container">
+            <div class="hero-text reveal-left">
+                <h1>Embedded Systems <br> Engineer</h1>
+                <p class="hero-subtitle">
+                    <span class="badge"><i class="fa-solid fa-code"></i> Firmware</span> 
+                    <span class="badge"><i class="fa-solid fa-microchip"></i> Hardware</span> 
+                    <span class="badge"><i class="fa-solid fa-check-double"></i> Validation</span>
+                </p>
+                <div class="hero-desc">
+                    <p>Versatile Embedded Systems Engineer with a proven track record in both hardware design and firmware development. Proficient in C/C++, microcontroller programming (ARM, AVR, PSoC, PIC), and schematic/PCB design using Altium and KiCad.</p>
+                    <br>
+                    <p>Excels at bridging the hardware-software interface, leveraging deep proficiency in peripherals (I2C, SPI, UART) and test/measurement tools to automate validation, enhance reliability, and accelerate product development cycles. Eager to apply a holistic, system-level approach to solve complex challenges from initial architecture and circuit design through to robust firmware integration and testing.</p>
+                </div>
+            </div>
+
+            <div class="profile-photo-frame reveal-right">
+                <img src="profile.jpg" alt="Vishnu Rach K R" onerror="this.style.display='none'; this.parentElement.classList.add('image-placeholder');">
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section-alt">
+        <div class="container">
+            <h2 class="section-title reveal-up">Technical Toolbox</h2>
+            <div class="skills-grid">
+                
+                <div class="skill-card reveal-up delay-1">
+                    <h3><i class="fa-solid fa-code"></i> Firmware & Embedded</h3>
+                    <ul>
+                        <li><i class="fa-solid fa-terminal"></i> <strong>Langs:</strong> C, C++, Embedded C, Python</li>
+                        <li><i class="fa-solid fa-microchip"></i> <strong>MCUs:</strong> PSoC, PIC, ARM, AVR, ESP8266</li>
+                        <li><i class="fa-solid fa-gears"></i> RTOS Fundamentals</li>
+                        <li><i class="fa-solid fa-network-wired"></i> I2C, SPI, UART, GPIO, ADC, PWM</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card reveal-up delay-2">
+                    <h3><i class="fa-solid fa-laptop-code"></i> IDEs & Tools</h3>
+                    <ul>
+                        <li><i class="fa-solid fa-code-branch"></i> PSoC Creator, STM32CubeIDE</li>
+                        <li><i class="fa-solid fa-code-branch"></i> Keil μVision, MPLAB X, Arduino IDE</li>
+                        <li><i class="fa-solid fa-code-commit"></i> <strong>VCS:</strong> Tortoise SVN</li>
+                        <li><i class="fa-solid fa-list-check"></i> <strong>Mgmt:</strong> Jira, Codebeamer</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card reveal-up delay-3">
+                    <h3><i class="fa-solid fa-bezier-curve"></i> Hardware Design (EDA)</h3>
+                    <ul>
+                        <li><i class="fa-solid fa-layer-group"></i> Altium Designer, KiCad</li>
+                        <li><i class="fa-solid fa-wave-square"></i> Proteus, LTSpice (Simulation)</li>
+                        <li><i class="fa-solid fa-pen-ruler"></i> Schematic & PCB Design</li>
+                        <li><i class="fa-solid fa-check-double"></i> Circuit Analysis</li>
+                    </ul>
+                </div>
+                
+                 <div class="skill-card reveal-up delay-4">
+                    <h3><i class="fa-solid fa-vial"></i> Test, Measure & Auto</h3>
+                    <ul>
+                        <li><i class="fa-solid fa-chart-line"></i> NI DAQ, MonoDAQ, LabVIEW</li>
+                        <li><i class="fa-solid fa-microscope"></i> Oscilloscopes, Logic Analyzers</li>
+                        <li><i class="fa-solid fa-plug"></i> Electronic Load, Power Supplies</li>
+                        <li><i class="fa-solid fa-car-battery"></i> Battery & Reliability Testing</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="section-white">
+        <div class="container">
+            <h2 class="section-title reveal-up">Professional Journey</h2>
+            
+            <div class="timeline">
+                <div class="timeline-item reveal-up">
+                    <div class="timeline-date"><i class="fa-regular fa-calendar-check"></i> Aug 2022 – Jan 2026 (Serving Notice Period)</div>
+                    <div class="timeline-content">
+                        <h3>R&D Engineer</h3>
+                        <span class="company"><i class="fa-solid fa-building"></i> Litin Design Labs / BTL India Pvt Ltd (On Deputation)</span>
+                        <p class="role-desc">Focused on medical device firmware (IEC 60601 standards) and automated validation systems.</p>
+                        <ul class="role-list">
+                            <li>Developed embedded firmware in C for daughter boards with an MCU and peripheral testing including EEPROM for hardware test jigs.</li>
+                            <li>Architected automated validation systems using MonoDAQ and Dewesoft, reducing manual test time by 40%.</li>
+                            <li>Designed circuits and managed component selection using Altium and LTSpice.</li>
+                            <li>Executed comprehensive hardware test plans at board and system levels.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal-up">
+                    <div class="timeline-date"><i class="fa-regular fa-calendar"></i> Jan 2016 – Aug 2022</div>
+                    <div class="timeline-content">
+                        <h3>Assistant Professor cum Research Assistant</h3>
+                        <span class="company"><i class="fa-solid fa-university"></i> Vidya Academy of Science and Technology</span>
+                        <ul class="role-list">
+                            <li>Architected the complete system for an award-winning AAC (Augmentative and Alternative Communication) device.</li>
+                            <li>Instructed 100+ students in embedded firmware and hardware integration.</li>
+                            <li>Developed laboratory curricula for microcontroller applications.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal-up">
+                    <div class="timeline-date"><i class="fa-regular fa-calendar"></i> Jul 2019 – Dec 2019</div>
+                    <div class="timeline-content">
+                        <h3>Senior Research Fellow (Sabbatical)</h3>
+                        <span class="company"><i class="fa-solid fa-flask"></i> Indian Institute of Technology (IIT), Delhi</span>
+                        <ul class="role-list">
+                            <li>Built NI DAQ + LabVIEW setups to monitor battery State of Charge (SoC).</li>
+                            <li>Implemented Arduino/MATLAB control for charge/discharge testing.</li>
+                            <li>Authored coding tutorials for STM32 microcontrollers.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section-alt">
+        <div class="container">
+            <h2 class="section-title reveal-up">Featured Projects</h2>
+            
+            <div class="projects-grid">
+                <article class="project-card reveal-up delay-1">
+                    <div class="project-header">
+                        <h3><i class="fa-solid fa-pump-medical"></i> Infusion Pump</h3>
+                        <div class="tags">
+                            <span>PSoC</span><span>Altium</span><span>IEC 60601</span>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <p><strong><i class="fa-solid fa-user-tag"></i> Role:</strong> Firmware & Hardware Validation</p>
+                        <p>Developed firmware in PSoC Creator to validate daughter board integration. Designed a BMS and power architecture in Altium, validating circuits in LTSpice to ensure patient safety standards.</p>
+                    </div>
+                </article>
+
+                <article class="project-card reveal-up delay-2">
+                    <div class="project-header">
+                        <h3><i class="fa-solid fa-heart-pulse"></i> Holter ECG Machine</h3>
+                        <div class="tags">
+                            <span>Automation</span><span>Li-ion</span><span>Testing</span>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <p><strong><i class="fa-solid fa-user-tag"></i> Role:</strong> Reliability Engineer</p>
+                        <p>Developed an automated test system for battery connection reliability, eliminating 90% of manual testing labor. Verified charger IC and pack protection behavior under environmental stress.</p>
+                    </div>
+                </article>
+
+                <article class="project-card reveal-up delay-3">
+                    <div class="project-header">
+                        <h3><i class="fa-solid fa-microchip"></i> Invasive Cardiology Board</h3>
+                        <div class="tags">
+                            <span>ARM</span><span>Ethernet</span><span>Hardware Design</span>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <p><strong><i class="fa-solid fa-user-tag"></i> Role:</strong> Hardware Designer</p>
+                        <p>Designed schematics for a carrier board featuring power supplies, an ARM microcontroller, and communication peripherals (LVDS, Ethernet, SPI, RS485). Executed hardware evaluation plans.</p>
+                    </div>
+                </article>
+
+                <article class="project-card reveal-up delay-4">
+                    <div class="project-header">
+                        <h3><i class="fa-solid fa-comments"></i> AAC Device (Award Winner)</h3>
+                        <div class="tags">
+                            <span>Product Design</span><span>System Architecture</span>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <p><strong><i class="fa-solid fa-user-tag"></i> Role:</strong> System Architect</p>
+                        <p>Designed the complete system for an Augmentative and Alternative Communication device for NISH. Won First Place in a State-Wide Competition (July 2022).</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="training" class="section-white">
+        <div class="container">
+            <h2 class="section-title reveal-up">Training & Research</h2>
+            
+            <div class="content-block reveal-up delay-1">
+                <h3><i class="fa-solid fa-chalkboard-user"></i> Academic Mentorship</h3>
+                <p>During my tenure at <strong>Vidya Academy of Science and Technology</strong>, I instructed and mentored over <strong>100 students</strong> (Diploma, B. Tech, M. Tech) in:</p>
+                <ul class="training-list">
+                    <li><i class="fa-solid fa-check"></i> Embedded Firmware Development</li>
+                    <li><i class="fa-solid fa-check"></i> Microcontroller Applications</li>
+                    <li><i class="fa-solid fa-check"></i> Hardware Integration & PCB Design</li>
+                </ul>
+            </div>
+
+            <div class="content-block reveal-up delay-2">
+                <h3><i class="fa-solid fa-book-open"></i> Curriculum Development</h3>
+                <p>Developed comprehensive laboratory curricula and conducted hands-on training sessions to bridge the gap between academic theory and industry requirements.</p>
+            </div>
+
+            <div class="content-block reveal-up delay-3">
+                <h3><i class="fa-solid fa-pen-nib"></i> Technical Writing</h3>
+                <p>While at <strong>IIT Delhi</strong>, authored coding tutorials and practical examples for the STM32 microcontroller, helping researchers understand complex embedded concepts.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section-alt">
+        <div class="container contact-container">
+            <h2 class="section-title reveal-up">Get In Touch</h2>
+            <p class="contact-intro reveal-up">
+                I am currently serving my notice period and available for immediate opportunities in Embedded Systems, Firmware Development, and Hardware Design.
             </p>
             
-            <div class="cta-group">
-                <a href="projects.html" class="btn btn-primary">
-                    <i class="fa-solid fa-eye"></i> View Projects
+            <div class="contact-links">
+                <a href="mailto:your.email@example.com" class="contact-card reveal-up delay-1">
+                    <i class="fa-solid fa-at"></i>
+                    <h3>Email Me</h3>
+                    <p>your.email@example.com</p>
                 </a>
-                <a href="resume.pdf" class="btn btn-secondary" target="_blank">
-                    <i class="fa-solid fa-file-arrow-down"></i> Resume
+                
+                <a href="https://linkedin.com/in/your-profile" target="_blank" class="contact-card reveal-up delay-2">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <h3>LinkedIn</h3>
+                    <p>View Professional Profile</p>
+                </a>
+                
+                <a href="https://github.com/your-username" target="_blank" class="contact-card reveal-up delay-3">
+                    <i class="fa-brands fa-github"></i>
+                    <h3>GitHub</h3>
+                    <p>View Code Repositories</p>
                 </a>
             </div>
         </div>
+    </section>
 
-        <div class="profile-photo-frame">
-            <img src="profile.jpg" alt="Vishnu Rach K R">
-        </div>
-    </div>
 </main>
+
+<footer class="footer">
+    <p>&copy; 2025 Vishnu Rach K R. All Rights Reserved.</p>
+</footer>
 
 <script src="js/script.js"></script>
 </body>
