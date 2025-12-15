@@ -1,9 +1,6 @@
-// Active navigation
-const links = document.querySelectorAll(".nav a");
-const current = location.pathname.split("/").pop();
 
-links.forEach(link => {
-  if (link.getAttribute("href") === current) {
-    link.classList.add("active");
-  }
-});
+const ham=document.getElementById("hamburger");
+const nav=document.getElementById("navMenu");
+if(ham){
+  ham.onclick=()=>nav.classList.toggle("open");
+}
