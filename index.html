@@ -1,62 +1,373 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Vishnu Rach K R | Embedded Systems Engineer</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-<header class="header">
-    <div class="brand-name">
-        <i class="fa-solid fa-microchip"></i> Vishnu Rach K R
-    </div>
-    <nav class="nav" id="navMenu">
-        <a href="index.html" class="active"><i class="fa-solid fa-house"></i> Home</a>
-<a href="skills.html" ><i class="fa-solid fa-tools"></i> Skills</a>
-<a href="experience.html" ><i class="fa-solid fa-briefcase"></i> Experience</a>
-<a href="projects.html" ><i class="fa-solid fa-project-diagram"></i> Projects</a>
-<a href="training.html" ><i class="fa-solid fa-chalkboard-user"></i> Training</a>
-<a href="contact.html" ><i class="fa-solid fa-envelope"></i> Contact</a>
+!DOCTYPE html
+html lang=en
+head
+    meta charset=UTF-8
+    meta name=viewport content=width=device-width, initial-scale=1.0
+    titleVishnu Rach K R - Portfoliotitle
+    link rel=stylesheet href=httpscdnjs.cloudflare.comajaxlibsfont-awesome6.0.0cssall.min.css
+    style
+         --- CSS Variables & Reset --- 
+        root {
+            --primary-color #0056b3;
+            --secondary-color #f4f4f4;
+            --text-dark #333;
+            --text-light #666;
+            --white #ffffff;
+            --shadow 0 4px 6px rgba(0,0,0,0.1);
+        }
 
-    </nav>
-    <div class="hamburger" id="hamburger">
-        <span></span><span></span><span></span>
-    </div>
-</header>
+         {
+            margin 0;
+            padding 0;
+            box-sizing border-box;
+            font-family 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
 
-<main class="hero">
-    <div class="hero-container">
-        <div class="hero-text">
-            <h1>Embedded Systems <br> Engineer</h1>
-            <p class="hero-subtitle">
-                <i class="fa-solid fa-code"></i> Firmware &nbsp;|&nbsp; 
-                <i class="fa-solid fa-microchip"></i> Hardware &nbsp;|&nbsp; 
-                <i class="fa-solid fa-check-double"></i> Validation
-            </p>
-            <p style="margin-bottom: 25px; color: #4a5568;">
-                Versatile engineer bridging the gap between hardware design and firmware integration. 
-                Specialized in Medical Devices, Test Automation, and Full-Cycle Product Development.
-            </p>
+        body {
+            line-height 1.6;
+            color var(--text-dark);
+            background-color var(--secondary-color);
+        }
+
+        a { text-decoration none; color inherit; }
+        ul { list-style none; }
+
+         --- Header & Navigation --- 
+        header {
+            background var(--white);
+            box-shadow var(--shadow);
+            position sticky;
+            top 0;
+            z-index 1000;
+        }
+
+        nav {
+            display flex;
+            justify-content space-between;
+            align-items center;
+            padding 1rem 5%;
+            max-width 1200px;
+            margin 0 auto;
+        }
+
+        .logo {
+            font-size 1.5rem;
+            font-weight bold;
+            color var(--primary-color);
+        }
+
+        .nav-links {
+            display flex;
+            gap 20px;
+        }
+
+        .nav-links a {
+            color var(--text-dark);
+            font-weight 500;
+            transition color 0.3s;
+        }
+
+        .nav-links ahover { color var(--primary-color); }
+
+         --- Hero Section --- 
+        .hero {
+            background linear-gradient(135deg, #0056b3, #0088ff);
+            color var(--white);
+            padding 4rem 5%;
+            text-align center;
+        }
+
+        .hero h1 { font-size 2.5rem; margin-bottom 10px; }
+        .hero h2 { font-size 1.5rem; font-weight 400; opacity 0.9; }
+        .btn {
+            display inline-block;
+            background var(--white);
+            color var(--primary-color);
+            padding 10px 20px;
+            border-radius 5px;
+            margin-top 20px;
+            font-weight bold;
+            transition 0.3s;
+        }
+        .btnhover { background #e6e6e6; }
+
+         --- General Section Styling --- 
+        section {
+            padding 4rem 5%;
+            max-width 1200px;
+            margin 0 auto;
+        }
+
+        .section-title {
+            text-align center;
+            margin-bottom 3rem;
+            font-size 2rem;
+            color var(--primary-color);
+            position relative;
+        }
+
+        .section-titleafter {
+            content '';
+            display block;
+            width 50px;
+            height 3px;
+            background var(--primary-color);
+            margin 10px auto 0;
+        }
+
+         --- Experience Section --- 
+        .timeline {
+            position relative;
+            max-width 800px;
+            margin 0 auto;
+        }
+
+        .experience-item {
+            background var(--white);
+            padding 20px;
+            border-radius 8px;
+            box-shadow var(--shadow);
+            margin-bottom 20px;
+            border-left 5px solid var(--primary-color);
+        }
+
+        .experience-item h3 { margin-bottom 5px; }
+        .badge {
+            background #ffc107;
+            color #333;
+            font-size 0.8rem;
+            padding 2px 6px;
+            border-radius 4px;
+            vertical-align middle;
+        }
+        .date {
+            color var(--text-light);
+            font-size 0.9rem;
+            margin-bottom 10px;
+            font-style italic;
+        }
+
+         --- Training Grid --- 
+        .training-grid {
+            display grid;
+            grid-template-columns repeat(auto-fit, minmax(300px, 1fr));
+            gap 20px;
+        }
+
+        .card {
+            background var(--white);
+            border-radius 8px;
+            overflow hidden;
+            box-shadow var(--shadow);
+            transition transform 0.3s;
+        }
+
+        .cardhover { transform translateY(-5px); }
+
+        .card img {
+            width 100%;
+            height 200px;
+            object-fit cover;
+            background-color #ddd;  Fallback color if image missing 
+        }
+
+        .card-content { padding 20px; }
+        .card-content h3 { font-size 1.2rem; margin-bottom 10px; }
+        .card-link {
+            display inline-block;
+            margin-top 10px;
+            color var(--primary-color);
+            font-weight bold;
+        }
+
+         --- Achievements Section --- 
+        .achievement-item {
+            background var(--white);
+            padding 25px;
+            border-radius 8px;
+            box-shadow var(--shadow);
+            margin-bottom 20px;
+        }
+
+        .upload-area {
+            margin-top 15px;
+            border 2px dashed #ccc;
+            padding 20px;
+            text-align center;
+            border-radius 5px;
+            cursor pointer;
+        }
+        
+        .upload-areahover { border-color var(--primary-color); }
+        
+        #momento-preview img {
+            max-width 100%;
+            max-height 300px;
+            margin-top 15px;
+            border-radius 5px;
+            box-shadow var(--shadow);
+        }
+
+         --- Footer --- 
+        footer {
+            background #333;
+            color var(--white);
+            text-align center;
+            padding 2rem 0;
+            margin-top 4rem;
+        }
+        
+        .social-icons a {
+            color var(--white);
+            font-size 1.5rem;
+            margin 0 10px;
+        }
+
+         --- Responsive --- 
+        @media (max-width 768px) {
+            .nav-links { display none; }  Simplified for mobile 
+            .hero h1 { font-size 2rem; }
+        }
+    style
+head
+body
+
+    header
+        nav
+            div class=logoVishnu Rach K Rdiv
+            ul class=nav-links
+                lia href=#aboutAboutali
+                lia href=#experienceExperienceali
+                lia href=#trainingTrainingali
+                lia href=#achievementsAchievementsali
+                lia href=#contactContactali
+            ul
+        nav
+    header
+
+    section class=hero
+        h1Hello, I'm Vishnu Rach K Rh1
+        h2Versatile Embedded Systems Engineerh2
+        a href=#contact class=btnGet In Toucha
+    section
+
+    section id=experience
+        h2 class=section-titleProfessional Experienceh2
+        div class=timeline
             
-            <div class="cta-group">
-                <a href="projects.html" class="btn btn-primary">
-                    <i class="fa-solid fa-eye"></i> View Projects
-                </a>
-                <a href="resume.pdf" class="btn btn-secondary" target="_blank">
-                    <i class="fa-solid fa-file-arrow-down"></i> Resume
-                </a>
-            </div>
-        </div>
+            div class=experience-item
+                h3Litin Design Labs  BTL India Pvt Ltd span class=badgeOn Deputationspanh3
+                p class=dateDec 2025 - Jan 2026 em(Serving notice period)emp
+                pDeveloping embedded solutions and hardware interfaces. Currently concluding tenure and facilitating knowledge transfer.p
+            div
 
-        <div class="profile-photo-frame">
-            <img src="profile.jpg" alt="Vishnu Rach K R">
-        </div>
-    </div>
-</main>
+            div class=experience-item
+                h3Previous Role (Example Embedded Engineer)h3
+                p class=dateStart Date - End Datep
+                pDescription of previous roles, key responsibilities, and technologies used (C, RTOS, PCB Design, etc.).p
+            div
+        div
+    section
 
-<script src="js/script.js"></script>
-</body>
-</html>
+    section id=training
+        h2 class=section-titleTraining Programs Conducted as Resource Personh2
+        div class=training-grid
+            
+            div class=card
+                img src=httpsvia.placeholder.com400x250text=Arduino+Workshop alt=Arduino Workshop 2022
+                div class=card-content
+                    h3Two-day Workshop on Arduinoh3
+                    p class=dateFeb 21-22, 2022p
+                    pConducted a workshop on Arduino Programming, Simulation, and Hardware Interface for Electrical Engineering students at Thiagarajar Polytechnic College.p
+                    a href=httpsnews.vidyaacademy.ac.in20220302eee-dept-conducts-two-day-workshop-on-arduino-for-polytechnic-college-students target=_blank class=card-linkRead More i class=fas fa-external-link-altia
+                div
+            div
+
+            div class=card
+                 img src=httpsvia.placeholder.com400x250text=LED+Assembly+Workshop alt=Arduino and LED Workshop
+                div class=card-content
+                    h3Workshop on Arduino and LED Bulb Assemblyh3
+                    p class=dateDec 19, 2018p
+                    pOrganized and conducted a workshop for polytechnic college students focusing on Arduino basics and practical LED bulb assembly.p
+                    a href=httpsnews.vidyaacademy.ac.in20181219eee-dept-organises-workshop-on-arduino-and-led-bulb-for-polytechnic-college-students target=_blank class=card-linkRead More i class=fas fa-external-link-altia
+                div
+            div
+
+            div class=card
+                 img src=httpsvia.placeholder.com400x250text=Appliance+Servicing alt=Appliance Servicing
+                div class=card-content
+                    h3Household Appliance Servicing Workshoph3
+                    p class=dateNov 27, 2021p
+                    pResource person for a workshop on servicing household equipment (fans, iron boxes, etc.) at Govt Women's Polytechnic College.p
+                    a href=httpsnews.vidyaacademy.ac.in20211208household-appliance-servicing-workshop-at-womens-polytechnic-college target=_blank class=card-linkRead More i class=fas fa-external-link-altia
+                div
+            div
+
+            div class=card
+                 img src=httpsvia.placeholder.com400x250text=Expert+Interaction alt=Expert Interaction Class
+                div class=card-content
+                    h3Expert Interaction for VHSS Studentsh3
+                    p class=dateFeb - Mar 2022p
+                    pServed as a resource person for online expert interaction classes for Vocational Higher Secondary School students in the Electrician Domestic Solutions Course.p
+                    a href=httpsnews.vidyaacademy.ac.in20220309eee-faculty-member-serves-as-resource-person-in-online-expert-interaction-class-for-students-of-sn-vocational-higher-secondary-school-sreekandeswaram target=_blank class=card-linkRead More i class=fas fa-external-link-altia
+                div
+            div
+
+        div
+    section
+
+    section id=achievements
+        h2 class=section-titleAchievementsh2
+        
+        div class=achievement-item
+            h3i class=fas fa-trophy style=color gold;i First Position in Entry Level AAC Device Development Challengeh3
+            p class=dateJuly 2022p
+            pLed the team that secured the First position in the challenge organized by the Center for Assistive Technology and Innovation (CATI) - NISH and APJ Abdul Kalam Technological University. Developed an entry-level AAC device to assist people with communication disorders.p
+            a href=httpsnews.vidyaacademy.ac.in20220728vidya-bagged-first-position-in-entry-level-aac-device-development-challenge target=_blank style=color var(--primary-color); font-weight bold;View News Reporta
+        div
+
+        div class=achievement-item
+            h3i class=fas fa-award style=color gold;i Outstanding Contribution Award (Holter Development)h3
+            pI’m incredibly humbled and excited to share that I’ve been recognized with the Outstanding Contribution Award for my work on Holter development! Being part of a project that pushed boundaries, innovated solutions, and created real impact has been an incredibly rewarding journey. The success we’ve seen would not have been possible without the guidance, trust, and mentorship from my superiors.p
+            
+            div class=upload-area
+                label for=momento-upload style=cursor pointer;
+                    i class=fas fa-cloud-upload-alt style=font-size 2rem; color var(--primary-color);ibr
+                    strongClick to Upload Award Momentostrong
+                label
+                input type=file id=momento-upload accept=image style=display none; onchange=previewImage(this)
+                div id=momento-previewdiv
+            div
+        div
+    section
+
+    footer id=contact
+        div class=social-icons
+            a href=httpslinkedin.cominvishnurachkr target=_blanki class=fab fa-linkedinia
+            a href=mailtoyour-email@example.comi class=fas fa-envelopeia
+            a href=httpsgithub.comi class=fab fa-githubia
+        div
+        p&copy; 2025 Vishnu Rach K R. All rights reserved.p
+    footer
+
+    script
+        function previewImage(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+                
+                reader.onload = function (e) {
+                    var img = document.createElement(img);
+                    img.src = e.target.result;
+                    img.alt = Momento Preview;
+                    
+                    var previewContainer = document.getElementById('momento-preview');
+                    previewContainer.innerHTML = '';  Clear previous image
+                    previewContainer.appendChild(img);
+                };
+                
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+    script
+body
+html
