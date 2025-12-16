@@ -301,5 +301,14 @@ section {
     .timeline::before { left: 0; }
     .timeline-item { padding-left: 30px; }
     .timeline-item::before { left: -9px; }
-    .workshop-gallery { grid-template-columns: 1fr; }
+    
+    /* MOBILE GALLERY FIX: Force 1 column on mobile */
+    .workshop-gallery { 
+        grid-template-columns: 1fr !important;
+    }
+    .workshop-gallery img {
+        height: auto !important; /* Ensure photos aren't squashed */
+        max-height: 400px;
+        object-fit: cover;
+    }
 }
