@@ -239,7 +239,7 @@ section {
 .project-list { margin-left: 1.5rem; list-style-type: disc; }
 .project-list li { margin-bottom: 0.5rem; color: var(--text-light); font-size: 0.95rem; }
 
-/* Workshops & Mentorship */
+/* Workshops & Mentorship (Reused for Achievements) */
 .content-block {
     background: white; padding: 2rem; margin-bottom: 1.5rem;
     border-radius: 12px; box-shadow: var(--card-shadow);
@@ -253,6 +253,59 @@ section {
 .workshop-gallery { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 1.5rem; }
 .workshop-gallery img { width: 100%; height: 250px; object-fit: cover; border-radius: 8px; transition: transform 0.3s; cursor: pointer; }
 .workshop-gallery img:hover { transform: scale(1.02); }
+
+/* Split Layout for Achievements */
+.split-layout {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+.split-content {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Image Container to center the trophy */
+.split-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.split-img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 450px; /* Increased height for vertical trophy */
+    object-fit: contain; /* Ensure full trophy is visible */
+    border-radius: 8px;
+    box-shadow: var(--card-shadow);
+    transition: transform 0.3s;
+}
+.split-img:hover { transform: scale(1.02); }
+
+/* PDF Button Styling */
+.pdf-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: #ef4444; /* Red color for PDF */
+    color: white;
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: background 0.3s, transform 0.2s;
+    text-decoration: none;
+    box-shadow: 0 2px 4px rgba(239, 68, 68, 0.3);
+}
+.pdf-btn:hover {
+    background: #dc2626;
+    transform: translateY(-2px);
+    color: white;
+}
 
 .training-list { list-style: none; margin-top: 1rem; }
 .training-list li { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem; color: var(--text-light); }
@@ -310,5 +363,14 @@ section {
         height: auto !important; /* Ensure photos aren't squashed */
         max-height: 400px;
         object-fit: cover;
+    }
+    
+    /* Split Layout Mobile Stack */
+    .split-layout {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    .split-img {
+        max-height: 350px; /* Reduced height on mobile */
     }
 }
