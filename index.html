@@ -19,7 +19,7 @@
         <a href="#skills" class="nav-link"><i class="fa-solid fa-tools"></i> Skills</a>
         <a href="#experience" class="nav-link"><i class="fa-solid fa-briefcase"></i> Experience</a>
         <a href="#projects" class="nav-link"><i class="fa-solid fa-project-diagram"></i> Projects</a>
-        <a href="#training" class="nav-link"><i class="fa-solid fa-chalkboard-user"></i> Training</a>
+        <a href="#training" class="nav-link"><i class="fa-solid fa-chalkboard-user"></i> Workshops</a>
         <a href="#contact" class="nav-link"><i class="fa-solid fa-envelope"></i> Contact</a>
     </nav>
     <div class="hamburger" id="hamburger">
@@ -87,7 +87,7 @@
                 </div>
                 
                  <div class="skill-card reveal-up delay-4">
-                    <h3><i class="fa-solid fa-vial"></i> Test, Measure & Auto</h3>
+                    <h3><i class="fa-solid fa-vial"></i> Testing, Measurement & Automation</h3>
                     <ul>
                         <li><i class="fa-solid fa-chart-line"></i> NI DAQ, MonoDAQ, LabVIEW</li>
                         <li><i class="fa-solid fa-microscope"></i> Oscilloscopes, Logic Analyzers</li>
@@ -113,7 +113,7 @@
                         <p class="role-desc">Focused on medical device firmware (IEC 60601 standards) and automated validation systems.</p>
                         <ul class="role-list">
                             <li>Developed embedded firmware in C for daughter boards with an MCU and peripheral testing including EEPROM for hardware test jigs.</li>
-                            <li>Architected automated validation systems using MonoDAQ and Dewesoft, reducing manual test time by 40%.</li>
+                            <li>Architected automated validation systems using MCU, MonoDAQ and Dewesoft, reducing manual test time by 40%.</li>
                             <li>Designed circuits and managed component selection using Altium and LTSpice.</li>
                             <li>Executed comprehensive hardware test plans at board and system levels.</li>
                         </ul>
@@ -127,7 +127,7 @@
                         <span class="company"><i class="fa-solid fa-university"></i> Vidya Academy of Science and Technology</span>
                         <ul class="role-list">
                             <li>Architected the complete system for an award-winning AAC (Augmentative and Alternative Communication) device.</li>
-                            <li>Instructed 100+ students in embedded firmware and hardware integration.</li>
+                            <li>Instructed 100+ students in embedded firmware development and hardware design.</li>
                             <li>Developed laboratory curricula for microcontroller applications.</li>
                         </ul>
                     </div>
@@ -140,7 +140,7 @@
                         <span class="company"><i class="fa-solid fa-flask"></i> Indian Institute of Technology (IIT), Delhi</span>
                         <ul class="role-list">
                             <li>Built NI DAQ + LabVIEW setups to monitor battery State of Charge (SoC).</li>
-                            <li>Implemented Arduino/MATLAB control for charge/discharge testing.</li>
+                            <li>Implemented Arduino/MATLAB control for battery charge/discharge testing.</li>
                             <li>Authored coding tutorials for STM32 microcontrollers.</li>
                         </ul>
                     </div>
@@ -162,8 +162,11 @@
                         </div>
                     </div>
                     <div class="project-body">
-                        <p><strong><i class="fa-solid fa-user-tag"></i> Role:</strong> Firmware & Hardware Validation</p>
-                        <p>Developed firmware in PSoC Creator to validate daughter board integration. Designed a BMS and power architecture in Altium, validating circuits in LTSpice to ensure patient safety standards.</p>
+                        <ul class="project-list">
+                            <li>Developed firmware in PSoC Creator to validate daughter board integration.</li>
+                            <li>Developed firmware to control automated PCBA testing via custom test jig.</li>
+                            <li>Designed a BMS and power architecture in Altium, validating circuits in LTSpice to ensure patient safety standards.</li>
+                        </ul>
                     </div>
                 </article>
 
@@ -175,8 +178,10 @@
                         </div>
                     </div>
                     <div class="project-body">
-                        <p><strong><i class="fa-solid fa-user-tag"></i> Role:</strong> Reliability Engineer</p>
-                        <p>Developed an automated test system for battery connection reliability, eliminating 90% of manual testing labor. Verified charger IC and pack protection behavior under environmental stress.</p>
+                        <ul class="project-list">
+                            <li>Developed an automated test system for battery connection reliability, eliminating 90% of manual testing labor.</li>
+                            <li>Verified charger IC and battery pack protection behavior under environmental stress conditions using MCU based automated system and environmental chamber.</li>
+                        </ul>
                     </div>
                 </article>
 
@@ -188,8 +193,10 @@
                         </div>
                     </div>
                     <div class="project-body">
-                        <p><strong><i class="fa-solid fa-user-tag"></i> Role:</strong> Hardware Designer</p>
-                        <p>Designed schematics for a carrier board featuring power supplies, an ARM microcontroller, and communication peripherals (LVDS, Ethernet, SPI, RS485). Executed hardware evaluation plans.</p>
+                        <ul class="project-list">
+                            <li>Designed schematics for a carrier board featuring power supplies, ARM microcontroller, and communication peripherals (Ethernet, SPI, USB-UART, RS485, OFC) in Altium Designer.</li>
+                            <li>Executed hardware evaluation plans and system level noise performance test.</li>
+                        </ul>
                     </div>
                 </article>
 
@@ -201,8 +208,10 @@
                         </div>
                     </div>
                     <div class="project-body">
-                        <p><strong><i class="fa-solid fa-user-tag"></i> Role:</strong> System Architect</p>
-                        <p>Designed the complete system for an Augmentative and Alternative Communication device for NISH. Won First Place in a State-Wide Competition (July 2022).</p>
+                        <ul class="project-list">
+                            <li>Designed the complete system for an Augmentative and Alternative Communication device for NISH (National Institute of Speech and Hearing).</li>
+                            <li>Won First Place in a State-Wide Competition (July 2022).</li>
+                        </ul>
                     </div>
                 </article>
             </div>
@@ -211,27 +220,106 @@
 
     <section id="training" class="section-white">
         <div class="container">
-            <h2 class="section-title reveal-up">Training & Research</h2>
+            <h2 class="section-title reveal-up" style="margin-bottom:0;">Workshops & Mentorship</h2>
+            <div style="width: 60px; height: 4px; background: var(--primary); border-radius: 2px; margin: 1rem auto 3rem auto;"></div>
+            
             
             <div class="content-block reveal-up delay-1">
-                <h3><i class="fa-solid fa-chalkboard-user"></i> Academic Mentorship</h3>
-                <p>During my tenure at <strong>Vidya Academy of Science and Technology</strong>, I instructed and mentored over <strong>100 students</strong> (Diploma, B. Tech, M. Tech) in:</p>
-                <ul class="training-list">
-                    <li><i class="fa-solid fa-check"></i> Embedded Firmware Development</li>
-                    <li><i class="fa-solid fa-check"></i> Microcontroller Applications</li>
-                    <li><i class="fa-solid fa-check"></i> Hardware Integration & PCB Design</li>
+                <div class="workshop-header">
+                    <h3><i class="fa-solid fa-chalkboard-user"></i> Workshop on Arduino Programming & Hardware Interface</h3>
+                    <span class="workshop-date"><i class="fa-regular fa-calendar"></i> Feb 21 – 22, 2022</span>
+                </div>
+                <div class="workshop-meta">
+                    <p><strong>Role:</strong> Resource Person | <strong>Venue:</strong> Vidya Academy of Science and Technology (EEE Dept)</p>
+                    <p style="margin-top:0.5rem;"><strong>Audience:</strong> Students from Thiagarajar Polytechnic College, Alagappanagar</p>
+                </div>
+                
+                <ul class="project-list" style="margin-top: 1rem;">
+                    <li>Led a two-day hands-on workshop on Arduino IDE and Tinkercad simulation.</li><li>Trained students on digital/analog I/O, sensor interfacing, LCD displays, and serial monitoring.</li><li>Guided students in completing a final hardware project integrating these concepts.</li>
                 </ul>
+                
+                <div class="workshop-gallery" style="grid-template-columns: 1fr 1fr;">
+                    <img src="workshop_1.jpg"  alt="Workshop Photo" onerror="this.src='https://placehold.co/600x400?text=Photo+Placeholder'"><img src="workshop_2.jpg"  alt="Workshop Photo" onerror="this.src='https://placehold.co/600x400?text=Photo+Placeholder'"><img src="workshop_3.jpg"  alt="Workshop Photo" onerror="this.src='https://placehold.co/600x400?text=Photo+Placeholder'"><img src="workshop_4.jpg"  alt="Workshop Photo" onerror="this.src='https://placehold.co/600x400?text=Photo+Placeholder'">
+                </div>
             </div>
-
+        
             <div class="content-block reveal-up delay-2">
-                <h3><i class="fa-solid fa-book-open"></i> Curriculum Development</h3>
-                <p>Developed comprehensive laboratory curricula and conducted hands-on training sessions to bridge the gap between academic theory and industry requirements.</p>
+                <div class="workshop-header">
+                    <h3><i class="fa-solid fa-chalkboard-user"></i> Workshop on Arduino Programming and LED Bulb Assembly</h3>
+                    <span class="workshop-date"><i class="fa-regular fa-calendar"></i> Dec 17 – 18, 2018</span>
+                </div>
+                <div class="workshop-meta">
+                    <p><strong>Role:</strong> Resource Person | <strong>Venue:</strong> Vidya Academy of Science and Technology (EEE Dept)</p>
+                    <p style="margin-top:0.5rem;"><strong>Audience:</strong> Students from Polytechnic Colleges in Kerala</p>
+                </div>
+                
+                <ul class="project-list" style="margin-top: 1rem;">
+                    <li>Hosted a two-day workshop focused on Arduino programming, interfacing, and applications.</li><li>Conducted a half-day hands-on session on LED bulb assembling and testing.</li><li>Covered topics including Analog/Digital I/O, Actuator control, and Control of indicating devices.</li>
+                </ul>
+                
+                <div class="workshop-gallery" style="grid-template-columns: 1fr 1fr;">
+                    <img src="workshop_2_1.jpg"  alt="Workshop Photo" onerror="this.src='https://placehold.co/600x400?text=Photo+Placeholder'"><img src="workshop_2_2.jpg"  alt="Workshop Photo" onerror="this.src='https://placehold.co/600x400?text=Photo+Placeholder'">
+                </div>
             </div>
-
+        
             <div class="content-block reveal-up delay-3">
-                <h3><i class="fa-solid fa-pen-nib"></i> Technical Writing</h3>
-                <p>While at <strong>IIT Delhi</strong>, authored coding tutorials and practical examples for the STM32 microcontroller, helping researchers understand complex embedded concepts.</p>
+                <div class="workshop-header">
+                    <h3><i class="fa-solid fa-chalkboard-user"></i> Project Based Learning (PBL) & Product Development</h3>
+                    <span class="workshop-date"><i class="fa-regular fa-calendar"></i> March 2022</span>
+                </div>
+                <div class="workshop-meta">
+                    <p><strong>Role:</strong> Project Supervisor | <strong>Venue:</strong> Vidya Academy of Science & Technology (EEE Dept)</p>
+                    <p style="margin-top:0.5rem;"><strong>Audience:</strong> S3 B.Tech EEE Students</p>
+                </div>
+                
+                <ul class="project-list" style="margin-top: 1rem;">
+                    <li>Implemented Student-Centered Learning via Project Based Learning (PBL) for third-semester students.</li><li>Supervised students in developing hardware products like Metal Detectors, Rain Alarms, and Automatic Sanitizer Dispensers.</li><li>Guided students through product demonstration with PowerPoint presentations and technical reports.</li>
+                </ul>
+                
+                <div class="workshop-gallery" style="grid-template-columns: 1fr;">
+                    <img src="pbl_landscape_1.jpg" style="height: auto; max-height: none; object-fit: contain;" alt="Workshop Photo" onerror="this.src='https://placehold.co/600x400?text=Photo+Placeholder'"><img src="pbl_landscape_2.jpg" style="height: auto; max-height: none; object-fit: contain;" alt="Workshop Photo" onerror="this.src='https://placehold.co/600x400?text=Photo+Placeholder'">
+                </div>
             </div>
+        
+            <div class="content-block reveal-up delay-4">
+                <div class="workshop-header">
+                    <h3><i class="fa-solid fa-chalkboard-user"></i> Workshop on Household Equipment Servicing</h3>
+                    <span class="workshop-date"><i class="fa-regular fa-calendar"></i> Nov 27, 2021</span>
+                </div>
+                <div class="workshop-meta">
+                    <p><strong>Role:</strong> Resource Person | <strong>Venue:</strong> Government Women's Polytechnic College, Nedupuzha</p>
+                    <p style="margin-top:0.5rem;"><strong>Audience:</strong> Students of Government Women's Polytechnic College</p>
+                </div>
+                
+                <ul class="project-list" style="margin-top: 1rem;">
+                    <li>Organized as part of the Innovators' Premier League (IPL) initiative by KSUM.</li><li>Demonstrated servicing of ceiling fans, exhaust fans, iron boxes, grinders, vacuum cleaners, and electric kettles.</li><li>Collaborated with student co-resource person to facilitate practical sessions.</li>
+                </ul>
+                
+                <div class="workshop-gallery" style="grid-template-columns: 1fr 1fr;">
+                    <img src="workshop_3_1.jpg"  alt="Workshop Photo" onerror="this.src='https://placehold.co/600x400?text=Photo+Placeholder'"><img src="workshop_3_2.jpg"  alt="Workshop Photo" onerror="this.src='https://placehold.co/600x400?text=Photo+Placeholder'"><img src="workshop_3_3.jpg"  alt="Workshop Photo" onerror="this.src='https://placehold.co/600x400?text=Photo+Placeholder'"><img src="workshop_3_4.jpg"  alt="Workshop Photo" onerror="this.src='https://placehold.co/600x400?text=Photo+Placeholder'">
+                </div>
+            </div>
+        
+            <div class="content-block reveal-up delay-1">
+                <div class="workshop-header">
+                    <h3><i class="fa-solid fa-chalkboard-user"></i> Expert Interaction Classes on Energy Conservation</h3>
+                    <span class="workshop-date"><i class="fa-regular fa-calendar"></i> Feb 24 – Mar 4, 2022</span>
+                </div>
+                <div class="workshop-meta">
+                    <p><strong>Role:</strong> Resource Person | <strong>Venue:</strong> Online (Various Vocational Higher Secondary Schools in Kerala)</p>
+                    <p style="margin-top:0.5rem;"><strong>Audience:</strong> Students from Edamon, Kunnamkulam, Vallakkadavu, Sreekandeswaram, and Vadakkadathukavu VHSS</p>
+                </div>
+                
+                <ul class="project-list" style="margin-top: 1rem;">
+                    <li>Conducted a series of online interactive sessions on 'Home Energy Conservation' for VHSS students.</li><li>Organized by the Industry Institute Interaction Cell (IIIC), Department of General Education, Govt. of Kerala.</li><li>Focused on energy-efficient appliances, home energy assessment, and best practices for domestic electrical solutions.</li>
+                </ul>
+                
+                <div class="workshop-gallery" style="grid-template-columns: 1fr 1fr 1fr; gap: 0.75rem;">
+                    <img src="workshop_4_1.jpg" style="object-fit: contain;" alt="Workshop Photo" onerror="this.src='https://placehold.co/600x400?text=Photo+Placeholder'"><img src="workshop_4_2.jpg" style="object-fit: contain;" alt="Workshop Photo" onerror="this.src='https://placehold.co/600x400?text=Photo+Placeholder'"><img src="workshop_4_3.jpg" style="object-fit: contain;" alt="Workshop Photo" onerror="this.src='https://placehold.co/600x400?text=Photo+Placeholder'"><img src="workshop_4_4.jpg" style="object-fit: contain;" alt="Workshop Photo" onerror="this.src='https://placehold.co/600x400?text=Photo+Placeholder'"><img src="workshop_4_5.jpg" style="object-fit: contain;" alt="Workshop Photo" onerror="this.src='https://placehold.co/600x400?text=Photo+Placeholder'">
+                </div>
+            </div>
+        
+
         </div>
     </section>
 
@@ -243,24 +331,19 @@
             </p>
             
             <div class="contact-links">
-                <a href="mailto:your.email@example.com" class="contact-card reveal-up delay-1">
+                <a href="mailto:&#118;&#105;&#115;&#104;&#110;&#117;&#114;&#97;&#99;&#104;&#46;&#111;&#102;&#102;&#105;&#99;&#105;&#97;&#108;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;" class="contact-card reveal-up delay-1">
                     <i class="fa-solid fa-at"></i>
                     <h3>Email Me</h3>
-                    <p>your.email@example.com</p>
+                    <p>&#118;&#105;&#115;&#104;&#110;&#117;&#114;&#97;&#99;&#104;&#46;&#111;&#102;&#102;&#105;&#99;&#105;&#97;&#108;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</p>
                 </a>
                 
-                <a href="https://linkedin.com/in/your-profile" target="_blank" class="contact-card reveal-up delay-2">
+                <a href="https://linkedin.com/in/vishnurachkr" target="_blank" class="contact-card reveal-up delay-2">
                     <i class="fa-brands fa-linkedin"></i>
                     <h3>LinkedIn</h3>
                     <p>View Professional Profile</p>
                 </a>
                 
-                <a href="https://github.com/your-username" target="_blank" class="contact-card reveal-up delay-3">
-                    <i class="fa-brands fa-github"></i>
-                    <h3>GitHub</h3>
-                    <p>View Code Repositories</p>
-                </a>
-            </div>
+                </div>
         </div>
     </section>
 
