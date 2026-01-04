@@ -158,6 +158,19 @@ section {
 }
 .hero-desc { font-size: 1.15rem; color: var(--text-light); margin-bottom: 2rem; text-align: justify; }
 
+/* Buttons */
+.btn {
+    display: inline-flex; align-items: center; gap: 0.5rem;
+    padding: 0.8rem 1.5rem; border-radius: 8px; font-weight: 600;
+    transition: all 0.3s; border: 2px solid transparent; text-decoration: none;
+    font-size: 0.95rem; cursor: pointer;
+}
+.btn-primary { background: var(--primary); color: white; border-color: var(--primary); }
+.btn-primary:hover { background: var(--secondary); border-color: var(--secondary); }
+
+.btn-outline { border-color: var(--primary); color: var(--primary); background: transparent; }
+.btn-outline:hover { background: var(--primary); color: white; }
+
 .profile-photo-frame {
     position: relative;
     width: 350px;
